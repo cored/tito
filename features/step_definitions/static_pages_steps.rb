@@ -2,6 +2,12 @@ When(/^I visit the home page$/) do
   visit static_pages_home_url
 end
 
-Then(/^I should see 'Tito'$/) do
-  expect(page).to have_content 'Tito'
+When(/^I visit the help page$/) do
+  visit static_pages_help_url
 end
+
+Then(/^I should see '(.*)'$/) do |msg|
+  expect(page).to have_content msg
+end
+
+
