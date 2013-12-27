@@ -22,8 +22,27 @@
   </head>
 
   <body>
+  <div class="fixed">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+        <h1><a href="#">Tito</a></h1>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><%= link_to "Home", "#" %></li>
+          <li><%= link_to "Help", "#" %></li>
+          <li><%= link_to "Sign In", "#" %></li>
+        </section>
+      </nav>
+  </div>
 
-    <%= yield %>
+  <div class="row">
+    <div class="small 4 colums">
+      <%= yield %>
+    </div>
+  </div>
 
     
     <%= javascript_include_tag "application" %>
