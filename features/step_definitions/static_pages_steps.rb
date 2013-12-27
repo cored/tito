@@ -14,4 +14,8 @@ Then(/^I should see '(.*)'$/) do |msg|
   expect(page).to have_content msg
 end
 
+Then(/^The title should say '(.*)'$/) do |title|
+  expect(page).to have_title title
+end
+
 
