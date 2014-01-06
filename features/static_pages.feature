@@ -14,3 +14,8 @@ Feature: As a user I should be able to see proper info in the homepage
     When I visit the about page 
     Then I should see 'About Us'
     And The title should say 'Tito | About Us'
+
+  Scenario: Contact
+    When I visit the contact page 
+    Then I should see 'Contact'
+    And The title should say 'Tito | Contact' 
