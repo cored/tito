@@ -1,17 +1,17 @@
 When(/^I visit the home page$/) do
-  visit static_pages_home_url
+  visit root_url
 end
 
 When(/^I visit the help page$/) do
-  visit static_pages_help_url
+  visit help_url
 end
 
 When(/^I visit the about page$/) do
-  visit static_pages_about_url
+  visit about_url
 end
 
 When(/^I visit the contact page$/) do
-  visit static_pages_contact_url
+  visit contact_url
 end
 
 Then(/^I should see '(.*)'$/) do |msg|
