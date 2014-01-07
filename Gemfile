@@ -6,6 +6,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'zurb-foundation'
+gem 'simple_form'
 
 gem 'jquery-rails'
 
@@ -25,6 +26,7 @@ end
 
 group :development do 
   gem 'sqlite3'
+  gem 'pry'
 end
 
 group :production do 
